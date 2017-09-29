@@ -1,4 +1,4 @@
-# Blue Cafe Payroll System
+# BLUE CAFE PAYROLL SYSTEM
 This program is an Electronic Payroll System created for Blue Cafe and functions mainly to:
 
 - Add Employee Information
@@ -15,3 +15,8 @@ This program is an Electronic Payroll System created for Blue Cafe and functions
 	
 ###### Default Username: 'Manager'
 ###### Default Password: 'M4N4G3R'
+
+## SCREENSHOTS
+
+##### Login Screen:
+![LOGIN SCREEN](https://raw.githubusercontent.com/rasheika/Blue-Cafe-Payroll-System/master/img/Login%20Page.png)
