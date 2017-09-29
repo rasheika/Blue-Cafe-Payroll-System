@@ -67,8 +67,9 @@ void Exit();
 /*Begin Main Function*/
 int main()
 {
-	char username[10], password[10]; /*Declarion local variables*/
-
+	char username[10], password[10], ch; /*Declarion local variables*/
+	int i=0;
+	
 	system ("COLOR 1F"); /*Changes colour of display screen*/
 	
 	/*Calling on the standard time*/
@@ -86,7 +87,33 @@ int main()
 	scanf ("%s", &username);
 	printf ("\n");
 	printf ("Password:\t");
-	scanf ("%s", &password);
+	//scanf ("%s", &password);
+	
+	while(1)                                   //loops code block forever
+    {
+        ch=getch();
+        if(ch==13)                              //13 is the ASCII value for the "Enter" key
+            break;                              //Exit loop
+        else if(ch==8)                          //8 is the ASCII value for the "backspace" key
+        {       if(i!=0)                        //This is for avoiding the input from being deleted 
+            {
+                printf("\b");                   //'\b' represents blackspace escape character
+                printf("%c",32);                //32 is the ASCII value for space
+                printf("\b");                   //'\b' represents blackspace escape character
+                i--;
+                password[i]='\0';
+            }
+            else
+                continue;
+        }
+        else
+        {
+            putchar('*');                       //Replaces each character type by a *
+            password[i]=ch;
+            i++;
+        }
+    }    
+
 	
 	readlogin_info();
 	
