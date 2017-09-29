@@ -1,4 +1,4 @@
-# BLUE CAFE PAYROLL SYSTEM ![Progress] (http://progressed.io/bar/100)
+# BLUE CAFE PAYROLL SYSTEM ![Progress](http://progressed.io/bar/100)
 This program is an Electronic Payroll System created for Blue Cafe and functions mainly to:
 
 - Add Employee Information
